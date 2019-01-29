@@ -96,8 +96,8 @@ $(document).ready(function() {
 </table>
 
 <div class="d-flex flex-row justify-content-between">
-<input type="submit" class="btn btn-danger mt-1" value="Delete Selected" name="deleteall">
-<a href="#" class="btn btn-success mt-1">Export Data</a>
+<input type="submit" class="btn btn-danger mt-1" value="Delete Selected" name="delete_student">
+<a href="<?php echo base_url().'Excel_controller/student_export';  ?>" class="btn btn-success mt-1">Export Data</a>
 </div>
 </form>
 </section>
