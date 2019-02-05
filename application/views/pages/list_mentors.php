@@ -1,4 +1,4 @@
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<main role="main" class="col-md-12 ml-sm-auto col-lg-10 px-4">
 
 <script language='javascript'>
 
@@ -36,11 +36,11 @@ $(document).ready(function() {
 
 </script>
 
-<section class="table-responsive-lg">
+<section>
 
 <form name="form" action="<?php echo base_url().'dashboard_controller/delete_all_ment' ?>" method="POST">
 	
-<table class="table table-borderless text-center table-striped table-hover">
+<table class="table table-borderless text-center table-striped table-hover table-responsive">
 	<thead class="bg-dark text-light">
 		<tr>
 			<td><input type="checkbox" id="checkedAll" name="selectAll"></td>

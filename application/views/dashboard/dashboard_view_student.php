@@ -1,5 +1,5 @@
 
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<main role="main" class="col-md-12 ml-sm-auto col-lg-10 col-sm-12 px-4">
      
 	<h4>Welcome, <?php 
 
@@ -57,7 +57,7 @@
 
         </div>   
              <div class="row">
-           	<div class="form-group col-6"> 
+           	<div class="form-group col-md-6 col-sm-12"> 
                <label for="Email">Email:</label>
                <input type="email" class="form-control" placeholder="Email" name="dash_email" disabled
 
@@ -66,7 +66,7 @@
                >
            </div>
 
-           <div class="form-group col-6"> 
+           <div class="form-group col-md-6 col-sm-12 "> 
                <label for="DOB">Date of Birth:</label>
                <input type="date" class="form-control" name="dash_dob" value="<?php if(!empty($user_data)){ echo $user_data[0]['dob']; } ?>"
 
@@ -112,19 +112,19 @@
        </div>
 
        <div class="row">
-       <div class="form-group col-3"> 
+       <div class="form-group col-xl-3 col-md-6"> 
                <label for="city">City / Town:</label>
                <input type="text" class="form-control" name="dash_city" placeholder="City/Town"  value="<?php if(!empty($user_data)){ echo $user_data[0]['city']; } ?>">
            </div>
 
-           <div class="form-group col-3"> 
+           <div class="form-group col-xl-3 col-md-6"> 
                <label for="state">State / Province / Region:</label>
                <input type="text" class="form-control" name="dash_state" placeholder="State / Province / Region"  value="<?php if(!empty($user_data)){ 
                 echo $user_data[0]['state'];
               } ?>" >
            </div>
 
-            <div class="form-group col-3"> 
+            <div class="form-group col-xl-3 col-md-6"> 
                <label for="postal">Postal Code:</label>
                <input type="number" class="form-control" name="dash_zip" placeholder="Postal Code"  value="<?php if(!empty($user_data)){             
                 $postal = $user_data[0]['postal']; 
@@ -132,7 +132,7 @@
               }?>" >
            </div>
 
-            <div class="form-group col-3"> 
+            <div class="form-group col-xl-3 col-md-6"> 
                <label for="country">Country:</label>
                     <select name="dash_country" class="form-control" >
 
@@ -171,7 +171,7 @@
       
            <div class="row">
            	
-            <div class="form-group col-6"> 
+            <div class="form-group col-xl-6 col-md-12"> 
                <label for="course">Course Enrolled: </label>
                <select name="dash_course" class="form-control"  
                <?php 
@@ -212,7 +212,7 @@
                	</select>
            </div>
 
-            <div class="form-group col-4"> 
+            <div class="form-group col-xl-4 col-md-6"> 
                <label for="yop">Year of Passing: </label>
                <select name="dash_yop" class="form-control"   <?php 
                 if(!empty($user_data)){
@@ -242,7 +242,7 @@
                </select>
            </div>
 
-           	 <div class="form-group col-2"> 
+           	 <div class="form-group col-xl-2 col-md-6"> 
                <label for="marks">Marks Obtained: </label>
 				  <input type="number" class="form-control" name="dash_marks" placeholder="Marks %" value="<?php 
           if(!empty($user_data)){
@@ -254,11 +254,11 @@
                 echo "disabled";
                }
              }
-               ?>    >              
+               ?>   >              
 				</div>
        </div>
 
-       <div class="form-group"> 
+       <div class="form-group col-12"> 
                <label for="college">College Name: </label>
                <input type="text" class="form-control" name="dash_college" placeholder="College Name"  value="<?php 
                if(!empty($user_data)){

@@ -349,9 +349,9 @@ class Dashboard_controller extends CI_Controller
 
 		 		$config['upload_path']          = 'assets/img/profile_pics/';
                 $config['allowed_types']        = 'gif|jpg|png|jpeg';
-                $config['max_size']             = 1024;
-                $config['max_width']            = 1024;
-                $config['max_height']           = 1024;
+                $config['max_size']             = 10000;
+                $config['max_width']            = 10000;
+                $config['max_height']           = 10000;
                 $config['encrypt_name']			= TRUE;
                 $config['remove_spaces']		= TRUE;
                  $config['overwrite']			= FALSE;
@@ -391,9 +391,9 @@ class Dashboard_controller extends CI_Controller
 
 		 		$config['upload_path']          = 'assets/img/profile_pics/';
                 $config['allowed_types']        = 'gif|jpg|png|jpeg';
-                $config['max_size']             = 1024;
-                $config['max_width']            = 1024;
-                $config['max_height']           = 1024;
+                $config['max_size']             = 10000;
+                $config['max_width']            = 10000;
+                $config['max_height']           = 10000;
                 $config['encrypt_name']			= TRUE;
                 $config['remove_spaces']		= TRUE;
                  $config['overwrite']			= FALSE;
@@ -427,9 +427,9 @@ public function uni_image(){
 
 		 		$config['upload_path']          = 'assets/img/profile_pics/';
                 $config['allowed_types']        = 'gif|jpg|png|jpeg';
-                $config['max_size']             = 1024;
-                $config['max_width']            = 1024;
-                $config['max_height']           = 1024;
+                $config['max_size']             = 10000;
+                $config['max_width']            = 10000;
+                $config['max_height']           = 10000;
                 $config['encrypt_name']			= TRUE;
                 $config['remove_spaces']		= TRUE;
                  $config['overwrite']			= FALSE;

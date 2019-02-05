@@ -1,4 +1,4 @@
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<main role="main" class="col-md-12 ml-sm-auto col-lg-10 px-4">
      
 	<h4>Welcome, <?php 
 
@@ -30,7 +30,7 @@
 <section class="container">		
 	<form action="<?php echo base_url()."dashboard_controller/dash_mentor_details"; ?>" method="POST">
 	<div class="row">
-			<div class="form-group col-6  d-inline-block"> 
+			<div class="form-group col-md-6 d-inline-block"> 
                <label for="First Name">First Name:</label>
                <input type="text" class="form-control" placeholder="First Name" name="ment_fname" disabled
 
@@ -39,7 +39,7 @@
                >
            </div>
 
-           <div class="form-group col-6 mx-auto d-inline-block"> 
+           <div class="form-group col-md-6 mx-auto d-inline-block"> 
                <label for="Last Name">Last Name:</label>
                <input type="text" class="form-control" placeholder="Last Name" name="ment_lname" disabled
                value="<?php echo $lname; ?>" 
@@ -48,7 +48,7 @@
 
         </div>   
            <div class="row">  
-           	<div class="form-group col-6"> 
+           	<div class="form-group col-md-6"> 
                <label for="Email">Email:</label>
                <input type="email" class="form-control" placeholder="Email" name="ment_email" disabled
 
@@ -57,7 +57,7 @@
                >
            </div>
 
-           <div class="form-group col-6"> 
+           <div class="form-group col-md-6"> 
                <label for="DOB">Date of Birth:</label>
                <input type="date" class="form-control" name="ment_dob"  value="<?php if(!empty($user_data)){ echo $user_data[0]['dob']; }
                ?>"
@@ -73,7 +73,7 @@
            </div>
          </div>
 
-          <div class="form-group form-check-inline"> 
+          <div class="form-group form-check-inline col-12"> 
               <label for="gender" class="form-check-label">Gender:
                <input type="radio" class="form-check-input" name="ment_gender" value="m"
                <?php 
@@ -102,25 +102,25 @@
        </div>
 
         <div class="row">
-       <div class="form-group col-3"> 
+       <div class="form-group col-xl-3 col-md-6"> 
                <label for="city">City / Town:</label>
                <input type="text" class="form-control" name="ment_city" placeholder="City/Town" value="<?php if(!empty($user_data)){ echo $user_data[0]['city']; } ?>" >
            </div>
 
-           <div class="form-group col-3"> 
+           <div class="form-group col-xl-3 col-md-6"> 
                <label for="state">State / Province / Region:</label>
                <input type="text" class="form-control" name="ment_state" placeholder="State / Province / Region"  value="<?php if(!empty($user_data)){ 
                 echo $user_data[0]['state'];
               } ?>" >
            </div>
 
-            <div class="form-group col-3"> 
+            <div class="form-group col-xl-3 col-md-6"> 
                <label for="postal">Postal Code:</label>
                <input type="number" class="form-control" name="ment_zip" placeholder="Postal Code"  value="<?php if(!empty($user_data)){ echo $user_data[0]['postal']; 
               }?>" >
            </div>
 
-            <div class="form-group col-3"> 
+            <div class="form-group col-xl-3 col-md-6"> 
                <label for="country">Country:</label>
                     <select name="ment_country" class="form-control" >
 

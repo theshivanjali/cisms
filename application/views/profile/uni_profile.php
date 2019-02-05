@@ -1,4 +1,4 @@
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<main role="main" class="col-md-12 ml-sm-auto col-lg-10 px-4">
 
 	<?php 
 
@@ -22,7 +22,7 @@
      
 	<section class="container">
 		<div class="row">
-	<div class="col-3">
+	<div class="col-xl-3 col-md-12">
 		<div class="card p-2" style="border: 0px;">
 			<img src="<?php if(!empty($user_data)){
 				echo base_url().'assets/img/profile_pics/'.$user_data[0]['uni_pic']; } ?>" class="card-img">
@@ -45,31 +45,31 @@
 		</div>
  -->
 		<div class="row mt-1">
-			<div class="col-6">
-				<div class="col-6"><h4 class="fw-20">First Name</h4></div>
-				<div class="col-6"><p class="fw-100"><?php if(!empty($fname)){echo $fname; }  ?></p></div>
+			<div class="col-md-6">
+				<div class="col-md-12"><h4 class="fw-20">First Name</h4></div>
+				<div class="col-md-12"><p class="fw-100"><?php if(!empty($fname)){echo $fname; }  ?></p></div>
 			</div>
-			<div class="col-6">
-				<div class="col-6"><h4 class="fw-20">Last Name</h4></div>
-				<div class="col-6"><p class="fw-100"><?php if(!empty($lname)){echo $lname; }  ?></p></div>
+			<div class="col-md-6">
+				<div class="col-md-12"><h4 class="fw-20">Last Name</h4></div>
+				<div class="col-md-12"><p class="fw-100"><?php if(!empty($lname)){echo $lname; }  ?></p></div>
 			</div>
 		</div>
 
 		<div class="row mt-1">
-			<div class="col-6">
-				<div class="col-6"><h4 class="fw-20">Email</h4></div>
-				<div class="col-6"><p class="fw-100"><?php if(!empty($email)){echo $email; }  ?></p></div>
+			<div class="col-md-6">
+				<div class="col-md-12"><h4 class="fw-20">Email</h4></div>
+				<div class="col-md-12"><p class="fw-100"><?php if(!empty($email)){echo $email; }  ?></p></div>
 			</div>
-			<div class="col-6">
-				<div class="col-6"><h4 class="fw-20">Founder's Day</h4></div>
-				<div class="col-6"><p class="fw-100"><?php if(!empty($user_data)){ echo $user_data[0]['founder_day']; }
+			<div class="col-md-6">
+				<div class="col-md-12"><h4 class="fw-20">Founder's Day</h4></div>
+				<div class="col-md-12"><p class="fw-100"><?php if(!empty($user_data)){ echo $user_data[0]['founder_day']; }
                ?></p></div>
 			</div>
 		</div>
 
 		<div class="row mt-1">
 			<div class="col-6">
-				<div class="col-8"><h4 class="fw-20">List Of Colleges</h4></div>
+				<div class="col-sm-12 col-xl-8"><h4 class="fw-20">List Of Colleges</h4></div>
 				<div class="col-4">
 				<ul>
 					<li>
@@ -124,9 +124,9 @@
 		</div>	
 
 		<div class="row mt-1">
-			<div class="col-12">
-				<div class="col-6"><h4 class="fw-20">University Registration Number:</h4></div>
-				<div class="col-6"><p class="fw-100"><?php if(!empty($user_data)){ echo $user_data[0]['reg_no']; }
+			<div class="col-md-12">
+				<div class="col-md-12"><h4 class="fw-20">University Registration Number:</h4></div>
+				<div class="col-md-12"><p class="fw-100"><?php if(!empty($user_data)){ echo $user_data[0]['reg_no']; }
                ?></p></div>
 			</div>
 		</div>

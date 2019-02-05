@@ -11,7 +11,7 @@
 
 		?> 
 
-<section class="table-responsive-lg">
+<section>
 
 	<div class="row">
 		<div class="col-10">

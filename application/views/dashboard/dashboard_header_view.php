@@ -26,8 +26,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <header>
-		<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top" style="padding: 1rem 1rem;">
-		<a class="navbar-brand col-md-2 col-sm-3" href="#">Student Management System</a>				
+		<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" style="padding: 1rem 1rem;">
+		<a class="navbar-brand col-md-2 col-sm-3" href="#">Student Management System</a>		
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 			<ul class="navbar-nav ml-auto">
 				<li class=" nav-item active">
 					<a href="<?php 
@@ -45,11 +50,68 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           ?>" class="nav-link">
 						<i class="fas fa-home"></i> Home</a>
 				</li>
+       
+          <li class="nav-item d-lg-none">
+            <a class="nav-link" href="<?php
+            if($data['user_type']=='student'){
+            echo base_url().'dashboard_controller/student_profile/';
+            }elseif ($data['user_type']=='mentor'){
+              echo base_url().'dashboard_controller/mentor_profile/';
+            }elseif ($data['user_type']=='university'){
+              echo base_url().'dashboard_controller/university_profile/';
+            } else {
+              echo base_url();
+              }  ?>" >
+              <i class="fas fa-user-alt"></i>
+             Profile
+            </a>
+          </li>
+         <!--  <li class="nav-item">
+          <a href="<?php echo base_url().'dashboard_controller/logout/' ?>" class="nav-link">
+            <i class="fas fa-sign-out-alt"></i> Log Out</a>
+        </li> -->
+
+        <li class="nav-item d-lg-none">
+          <a href="<?php 
+              if(($data['user_type']=='mentor')||($data['user_type']=='university')){
+              echo base_url().'dashboard_controller/list_students'; }
+              else {
+              echo base_url();
+              } ?>" 
+              class="nav-link <?php if ($data['user_type']=='student'){ echo 'd-none'; } ?>">
+            <i class="fas fa-user-graduate"></i> Student's List</a>
+        </li>
+
+        <li class="nav-item d-lg-none">
+          <a href="<?php 
+              if($data['user_type']=='university'){
+              echo base_url().'dashboard_controller/list_mentors'; }
+              else {
+              echo base_url();
+              } ?>" 
+              class="nav-link <?php if (($data['user_type']=='student')||($data['user_type']=='mentor')){ echo 'd-none'; } ?>">
+            <i class="fas fa-chalkboard-teacher"></i> Mentor's List</a>
+        </li>
+
+        <li class="nav-item d-lg-none">
+          <a href="<?php 
+              if($data['user_type']=='university'){
+              echo base_url().'dashboard_controller/list_university'; }
+              else {
+              echo base_url();
+              } ?>" 
+              class="nav-link <?php if (($data['user_type']=='student')||($data['user_type']=='mentor')){ echo 'd-none'; } ?>">
+           <i class="fas fa-university"></i> College List</a>
+        </li>
+
+
+
 				<li class="nav-item">
 					<a href="<?php echo base_url().'dashboard_controller/logout/' ?>" class="nav-link">
 						<i class="fas fa-sign-out-alt"></i> Log Out</a>
 				</li>
 			</ul>
+    </div>
 		</nav>
 </header>
 
@@ -57,7 +119,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<div class="row">
 		
-		<nav class="col-md-2 d-md-block bg-light sidebar">
+		<nav class="col-md-2 d-none d-lg-block bg-light sidebar">
 			<div class="sidebar-sticky">
         <ul class="nav flex-column mx-4 p-2">
           <li class="nav-item">

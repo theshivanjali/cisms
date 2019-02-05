@@ -1,4 +1,4 @@
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<main role="main" class="col-md-12 ml-sm-auto col-lg-10 px-4 mb-5">
      
 	<h4>Welcome, <?php 
 
@@ -56,12 +56,12 @@
 
         </div>   
              <div class="row">
-           	<div class="form-group col-6"> 
+           	<div class="form-group col-md-6"> 
                <label for="Email">Email:</label>
                <input type="email" class="form-control" placeholder="Email" name="uni_email" disabled value="<?php echo $email; ?>">
            </div>
 
-            <div class="form-group col-6"> 
+            <div class="form-group col-md-6"> 
                <label for="DOB">Founder's Day:</label>
                <input type="date" class="form-control" name="uni_found" value="<?php if(!empty($user_data)){ echo $user_data[0]['founder_day']; } ?>"
                <?php 
@@ -76,67 +76,67 @@
            </div>
          </div>
          <div class="row">
-         <div class="col-4">
+         <div class="col-xl-4 col-sm-6">
          <label>List Of Colleges Associated:</label>
        </div>
-       <div class="col-2">
+       <div class="col-xl-2 col-sm-6">
          <label>No. of Seats Available:</label>
        </div>
      </div>
 
          <div class="row">
-           <div class="form-group col-4">
+           <div class="form-group col-xl-4 col-sm-6">
             <input type="text" name="college1" class="form-control" placeholder="First College" value="<?php if(!empty($user_data)){
               echo $user_data[0]['college1']; } ?>" >
            </div>
 
-            <div class="form-group col-2">
+            <div class="form-group col-xl-2 col-sm-6">
             <input type="number" name="seats1" class="form-control" placeholder="Seats" value="<?php if(!empty($user_data)){
               echo $user_data[0]['seats1']; } ?>" >
            </div>
          </div>
 
          <div class="row">
-           <div class="form-group col-4">
+           <div class="form-group col-xl-4 col-sm-6">
             <input type="text" name="college2" class="form-control" placeholder="Second College" value="<?php if(!empty($user_data)){
               echo $user_data[0]['college2']; } ?>" >
            </div>
 
-            <div class="form-group col-2">
+            <div class="form-group col-xl-2 col-sm-6">
             <input type="number" name="seats2" class="form-control" placeholder="Seats" value="<?php if(!empty($user_data)){
               echo $user_data[0]['seats2']; } ?>" >
            </div>
          </div>
 
          <div class="row">
-           <div class="form-group col-4">
+           <div class="form-group col-xl-4 col-sm-6">
             <input type="text" name="college3" class="form-control" placeholder="Third College" value="<?php if(!empty($user_data)){
               echo $user_data[0]['college3']; } ?>" >
            </div>
 
-            <div class="form-group col-2">
+            <div class="form-group col-xl-2 col-sm-6">
             <input type="number" name="seats3" class="form-control" placeholder="Seats" value="<?php if(!empty($user_data)){
               echo $user_data[0]['seats3']; } ?>" >
            </div>
          </div>
 
          <div class="row">
-           <div class="form-group col-4">
+           <div class="form-group col-xl-4 col-sm-6">
             <input type="text" name="college4" class="form-control" placeholder="Fourth College" value="<?php if(!empty($user_data)){
               echo $user_data[0]['college4']; } ?>" >
            </div>
-            <div class="form-group col-2">
+            <div class="form-group col-xl-2 col-sm-6">
             <input type="number" name="seats4" class="form-control" placeholder="Seats" value="<?php if(!empty($user_data)){
               echo $user_data[0]['seats4']; } ?>" >
            </div>
          </div>
 
           <div class="row">
-           <div class="form-group col-4">
+           <div class="form-group col-xl-4 col-sm-6">
             <input type="text" name="college5" class="form-control" placeholder="Fifth College" value="<?php if(!empty($user_data)){
               echo $user_data[0]['college5']; } ?>" >
            </div>
-            <div class="form-group col-2">
+            <div class="form-group col-xl-2 col-sm-6">
             <input type="number" name="seats5" class="form-control" placeholder="Seats" value="<?php if(!empty($user_data)){
               echo $user_data[0]['seats5']; } ?>" >
            </div>
